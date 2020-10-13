@@ -41,7 +41,7 @@ $trip_maximum_pax   = isset( $wp_travel_engine_setting['trip_maximum_pax'] ) ? $
 
     <?php
         $duration_array = apply_filters( 'wp_travel_engine_trip_duration_units', array(
-            'days'    => __( 'Days', 'wp-travel-engine' ),
+            'days'    => __( 'Dias', 'wp-travel-engine' ),
             // 'hours'   => __( 'Hours', 'wp-travel-engine' ),
             // 'minutes' => __( 'Minutes', 'wp-travel-engine' )
         ) );
@@ -53,7 +53,7 @@ $trip_maximum_pax   = isset( $wp_travel_engine_setting['trip_maximum_pax'] ) ? $
             <select name="wp_travel_engine_setting[trip_duration_unit]">
                 <option><?php _e( 'Select Duration Type', 'wp-travel-engine' ) ?></option>
                 <?php
-                    $trip_duration_unit = isset( $wp_travel_engine_setting['trip_duration_unit'] ) ? $wp_travel_engine_setting['trip_duration_unit'] : 'days';
+                    $trip_duration_unit = isset( $wp_travel_engine_setting['trip_duration_unit'] ) ? $wp_travel_engine_setting['trip_duration_unit'] : 'dias';
                     foreach( $duration_array as $value => $label ) {
                         echo '<option ' . selected( $trip_duration_unit, $value, false ) . ' value="' . esc_attr( $value ) . '">'. esc_html( $label ) .'</option>';
                     }
@@ -89,7 +89,7 @@ $trip_maximum_pax   = isset( $wp_travel_engine_setting['trip_maximum_pax'] ) ? $
                         <option><?php _e( 'Select Duration Type', 'wp-travel-engine' ) ?></option>
                         <?php
                             $cut_off = apply_filters( 'wp_travel_engine_trip_duration_units', array(
-                                'days'  => __( 'Days', 'wp-travel-engine' ),
+                                'days'  => __( 'Dias', 'wp-travel-engine' ),
                                 // 'hours' => __( 'Hours', 'wp-travel-engine' ),
                             ) );
                             foreach( $cut_off as $value => $label ) {

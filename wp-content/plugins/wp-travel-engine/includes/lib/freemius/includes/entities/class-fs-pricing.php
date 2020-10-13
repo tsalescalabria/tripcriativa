@@ -152,6 +152,6 @@
          * @return bool
          */
         function is_usd() {
-            return ( 'usd' === $this->currency );
+            return ( 'BRL' === $this->currency );
         }
 	}

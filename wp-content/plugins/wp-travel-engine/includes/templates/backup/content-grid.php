@@ -81,10 +81,10 @@
     </svg>
 </i>';
                             if( $trip_duration ){
-                                printf( _nx( '%1$d Day', '%1$d Days', $trip_duration, 'trip duration', 'wp-travel-engine' ), $trip_duration );
+                                printf( _nx( '%1$d Dia', '%1$d Dias', $trip_duration, 'trip duration', 'wp-travel-engine' ), $trip_duration );
                             }
                             if( $trip_duration_nights ) {
-                                printf( _nx( ' - %1$d Night', ' - %1$d Nights', $trip_duration_nights, 'trip duration night', 'wp-travel-engine' ), $trip_duration_nights );
+                                printf( _nx( ' - %1$d Noite', ' - %1$d Noites', $trip_duration_nights, 'trip duration night', 'wp-travel-engine' ), $trip_duration_nights );
                             }
                             echo '</span>';
                         ?>

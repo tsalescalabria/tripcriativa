@@ -16,7 +16,7 @@ $thousands_separator = isset( $wp_travel_engine_settings['thousands_separator'] 
                     <?php
                     $obj        = new Wp_Travel_Engine_Functions();
                     $currencies = $obj->wp_travel_engine_currencies();
-                    $code       = 'USD';
+                    $code       = 'BRL';
                     if( isset( $wp_travel_engine_settings['currency_code'] ) && $wp_travel_engine_settings['currency_code']!= '' )
                     {
                         $code = $wp_travel_engine_settings['currency_code'];

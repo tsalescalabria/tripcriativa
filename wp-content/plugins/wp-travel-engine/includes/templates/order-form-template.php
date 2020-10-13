@@ -13,7 +13,7 @@
 	$datetime = isset($_POST['trip-date']) ? esc_attr( $_POST['trip-date'] ):$_SESSION['trip-date'];
 
     $obj = new Wp_Travel_Engine_Functions();
-    $code = isset($wp_travel_engine_settings['currency_code']) ? $wp_travel_engine_settings['currency_code']: 'USD';
+    $code = isset($wp_travel_engine_settings['currency_code']) ? $wp_travel_engine_settings['currency_code']: 'BRL';
     $currency = $obj->wp_travel_engine_currencies_symbol( $code );
 
 	$wp_travel_engine_confirm = isset($wp_travel_engine_settings['pages']['wp_travel_engine_confirmation_page']) ? esc_attr($wp_travel_engine_settings['pages']['wp_travel_engine_confirmation_page']) : '';

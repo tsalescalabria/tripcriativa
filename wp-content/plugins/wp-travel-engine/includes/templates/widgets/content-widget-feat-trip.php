@@ -94,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                             </g>
                         </svg>
                     </i>
-                    <span><?php printf( _nx( '%1$d Day', '%1$d Days', $trip_duration, 'trip duration', 'wp-travel-engine' ), $trip_duration );?></span>
+                    <span><?php printf( _nx( '%1$d Dia', '%1$d Dias', $trip_duration, 'trip duration', 'wp-travel-engine' ), $trip_duration );?></span>
                 </span>
                 <?php endif; ?>
             </div>

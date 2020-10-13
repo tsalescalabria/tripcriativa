@@ -147,7 +147,7 @@ if ( ! empty( $cart_items ) ) :
 						$cart_discounts = $wte_cart->get_discounts();
 						if ( ! empty( $cart_discounts ) || sizeof( $cart_discounts ) !== 0 ) :
 							$trip_total       = $wte_cart->get_total();
-							$code             = isset( $wte_settings['currency_code'] ) ? $wte_settings['currency_code'] : 'USD';
+							$code             = isset( $wte_settings['currency_code'] ) ? $wte_settings['currency_code'] : 'BRL';
 							$calculated_total = isset( $trip_total['cart_total'] ) && ! empty( $trip_total['cart_total'] ) ? intval( $trip_total['cart_total'] ) : 0;
 							foreach ( $cart_discounts as $discount_key => $discount_item ) {
 								?>

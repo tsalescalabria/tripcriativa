@@ -202,7 +202,7 @@ function wp_travel_engine_get_currency_code( $use_default_currency_code = false 
 
 	$wp_travel_engine_settings = get_option( 'wp_travel_engine_settings', true );
 
-	$code = 'USD';
+	$code = 'BRL';
 
 	if ( isset( $wp_travel_engine_settings['currency_code'] ) && $wp_travel_engine_settings['currency_code'] != '' ) {
 		$code = $wp_travel_engine_settings['currency_code'];
@@ -218,7 +218,7 @@ function wp_travel_engine_get_currency_code( $use_default_currency_code = false 
  * @param string $code
  * @return void
  */
-function wp_travel_engine_get_currency_symbol( $code = 'USD' ) {
+function wp_travel_engine_get_currency_symbol( $code = 'BRL' ) {
 
 	$wte      = new Wp_Travel_Engine_Functions();
 	$currency = $wte->wp_travel_engine_currencies_symbol( $code );
@@ -314,7 +314,7 @@ function wp_travel_engine_get_trip_duration( $trip_id ) {
 
 	$trip_settings = get_post_meta( $trip_id, 'wp_travel_engine_setting', true );
 
-	return sprintf( _nx( '%s Day', '%s Days', $trip_settings['trip_duration'], 'trip duration days', 'wp-travel-engine' ), number_format_i18n( $trip_settings['trip_duration'] ) ) . ' ' . sprintf( _nx( '%s Night', '%s Nights', $trip_settings['trip_duration_nights'], 'trip duration nights', 'wp-travel-engine' ), number_format_i18n( $trip_settings['trip_duration_nights'] ) );
+	return sprintf( _nx( '%s Dia', '%s Dias', $trip_settings['trip_duration'], 'trip duration days', 'wp-travel-engine' ), number_format_i18n( $trip_settings['trip_duration'] ) ) . ' ' . sprintf( _nx( '%s Night', '%s Nights', $trip_settings['trip_duration_nights'], 'trip duration nights', 'wp-travel-engine' ), number_format_i18n( $trip_settings['trip_duration_nights'] ) );
 
 }
 
@@ -1794,7 +1794,7 @@ function wp_travel_engine_paypal_supported_currencies( $currency ) {
 			'SEK' => '&#107;&#114;', // Swedish krona
 			'CHF' => '&#67;&#72;&#70;', // New Zealand dollar
 			'THB' => '&#3647;', // Thai baht
-			'USD' => '&#36;', // United States dollar
+			'BRL' => '&#36;', // United States dollar
 		)
 	);
 

@@ -81,7 +81,7 @@ class Wp_Travel_Engine_Functions
 	//get vendor or admin currency
 	function trip_vendor_admin_currency_code($post)
 	{
-		$code = 'USD';
+		$code = 'BRL';
 		$wp_travel_engine_setting_option_setting = get_option( 'wp_travel_engine_settings', true );
 		$user = get_userdata( $post->post_author );
         if ( class_exists( 'Vendor_Wp_Travel_Engine' ) && $user && in_array( 'trip_vendor', $user->roles ) )
@@ -95,7 +95,7 @@ class Wp_Travel_Engine_Functions
         }
         else
         {
-            $code = isset( $wp_travel_engine_setting_option_setting['currency_code'] ) ? esc_attr( $wp_travel_engine_setting_option_setting['currency_code'] ):'USD';
+            $code = isset( $wp_travel_engine_setting_option_setting['currency_code'] ) ? esc_attr( $wp_travel_engine_setting_option_setting['currency_code'] ):'BRL';
         }
         return $code;
 	}
@@ -118,7 +118,7 @@ class Wp_Travel_Engine_Functions
             $code = esc_attr( $wp_travel_engine_setting_option_setting['currency_code'] );
         }
 		else{
-			$code = 'USD';
+			$code = 'BRL';
 		}
         $apiKey = isset($wp_travel_engine_setting_option_setting['currency_converter_api']) && $wp_travel_engine_setting_option_setting['currency_converter_api']!='' ? esc_attr($wp_travel_engine_setting_option_setting['currency_converter_api']) : '';
 
@@ -132,7 +132,7 @@ class Wp_Travel_Engine_Functions
 
 	function convert_trip_price($post, $trip_price)
 	{
-		$code = 'USD';
+		$code = 'BRL';
 		$userid = '';
 		$wp_travel_engine_setting_option_setting = get_option( 'wp_travel_engine_settings', true );
 		$user = get_userdata( $post->post_author );
@@ -457,7 +457,7 @@ class Wp_Travel_Engine_Functions
 					'TZS' => __( 'Tanzanian shilling', 'wp-travel-engine' ),
 					'UAH' => __( 'Ukrainian hryvnia', 'wp-travel-engine' ),
 					'UGX' => __( 'Ugandan shilling', 'wp-travel-engine' ),
-					'USD' => __( 'United States (US) dollar', 'wp-travel-engine' ),
+					'BRL' => __( 'United States (US) dollar', 'wp-travel-engine' ),
 					'UYU' => __( 'Uruguayan peso', 'wp-travel-engine' ),
 					'UZS' => __( 'Uzbekistani som', 'wp-travel-engine' ),
 					'VEF' => __( 'Venezuelan bol&iacute;var', 'wp-travel-engine' ),
@@ -637,7 +637,7 @@ class Wp_Travel_Engine_Functions
 			'TZS' => 'Sh',
 			'UAH' => '&#8372;',
 			'UGX' => 'UGX',
-			'USD' => '&#36;',
+			'BRL' => '&#36;',
 			'UYU' => '&#36;',
 			'UZS' => 'UZS',
 			'VEF' => 'Bs F',
@@ -666,7 +666,7 @@ class Wp_Travel_Engine_Functions
 	public function wp_travel_engine_get_default_settings() {
 
 		$default_settings = array(
-			'currency_code'          => 'USD',
+			'currency_code'          => 'BRL',
 			'price'         => '0.01',
 			'charges'          => '50.01',
 			);

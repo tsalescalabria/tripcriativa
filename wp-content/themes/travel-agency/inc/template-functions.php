@@ -867,10 +867,6 @@ function travel_agency_footer_bottom(){ ?>
 		<div class="site-info">
 			<?php
                 travel_agency_get_footer_copyright();
-                echo esc_html__( 'Travel Agency | Developed By ', 'travel-agency' );
-                echo '<a href="' . esc_url( 'https://rarathemes.com/' ) .'" rel="nofollow" target="_blank">' . esc_html__( 'Rara Theme', 'travel-agency' ) . '</a>';
-                
-                printf( esc_html__( ' Powered by %s', 'travel-agency' ), '<a href="'. esc_url( __( 'https://wordpress.org/', 'travel-agency' ) ) .'" target="_blank">WordPress</a> .' );
             ?>                              
 		</div>
         <?php 

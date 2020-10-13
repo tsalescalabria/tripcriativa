@@ -146,10 +146,10 @@ if( $title || $content || ( travel_agency_is_wpte_activated() && $posts && $qry-
                                                             </g>
                                                         </svg>
                                                     </i>';
-                                                    printf( esc_html( _nx( '%1$s Day', '%1$s Days', absint( $trip_duration ), 'trip duration', 'travel-agency-companion' ) ), absint( $trip_duration ) );
+                                                    printf( esc_html( _nx( '%1$s Dia', '%1$s Dias', absint( $trip_duration ), 'trip duration', 'travel-agency-companion' ) ), absint( $trip_duration ) );
                                                     
                                                     if( $trip_duration_nights ) {
-                                                        printf( esc_html( _nx( ' - %1$s Night', ' - %1$s Nights', absint( $trip_duration_nights ), 'trip duration night', 'travel-agency-companion' ) ), absint( $trip_duration_nights ) );
+                                                        printf( esc_html( _nx( ' - %1$s Noite', ' - %1$s Noites', absint( $trip_duration_nights ), 'trip duration night', 'travel-agency-companion' ) ), absint( $trip_duration_nights ) );
                                                     }
                                                     echo '</span>'; 
                                                 }

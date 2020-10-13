@@ -9,7 +9,7 @@ $wp_travel_engine_first_time_activation_flag = get_option('wp_travel_engine_firs
 $obj = new Wp_Travel_Engine_Functions();
 $self_obj = new WP_TRAVEL_ENGINE_ONBOARDING_PROCESS();
 $currencies = $obj->wp_travel_engine_currencies();
-$code = 'USD';
+$code = 'BRL';
 $addons_data = get_transient( 'wp_travel_engine_onboard_addons_list' );
 if ( ! $addons_data ) {
     $addons_data = wp_safe_remote_get( WP_TRAVEL_ENGINE_STORE_URL . '/edd-api/v2/products/?category=payment-gateways&number=-1' );

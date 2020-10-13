@@ -96,7 +96,7 @@ class Travel_Agency_Companion_Functions{
         if( $this->travel_agency_is_wpte_activated() ){
             $obj = new Wp_Travel_Engine_Functions();
             $wpte_setting = get_option( 'wp_travel_engine_settings', true ); 
-            $code = 'USD';
+            $code = 'BRL';
             if( isset( $wpte_setting['currency_code'] ) && $wpte_setting['currency_code']!= '' ){
                 $code = $wpte_setting['currency_code'];
             } 

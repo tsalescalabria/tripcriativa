@@ -18,9 +18,9 @@
                         echo '<span class="wte-title-duration">';
                         echo ' - ' . $wp_travel_engine_postmeta_settings['trip_duration'];
                         if ($wp_travel_engine_postmeta_settings['trip_duration'] > 1) {
-                            _e(' Days', 'wp-travel-engine');
+                            _e(' Dias', 'wp-travel-engine');
                         } else {
-                            _e(' Day', 'wp-travel-engine');
+                            _e(' Dia', 'wp-travel-engine');
                         }
                         echo '</span>';
                     }

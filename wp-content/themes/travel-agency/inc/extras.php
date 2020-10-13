@@ -178,7 +178,7 @@ function travel_agency_get_trip_currency(){
     if( travel_agency_is_wpte_activated() ){
         $obj = new Wp_Travel_Engine_Functions();
         $wpte_setting = get_option( 'wp_travel_engine_settings', true ); 
-        $code = 'USD';
+        $code = 'BRL';
 
         if( isset( $wpte_setting['currency_code'] ) && $wpte_setting['currency_code']!= '' ){
             $code = $wpte_setting['currency_code'];
@@ -202,7 +202,7 @@ if( ! function_exists( 'travel_agency_get_trip_currency_code' ) ) :
  * Get currency code for WP Travel Engine Trip
 */
 function travel_agency_get_trip_currency_code( $post ){
-    $code = 'USD';
+    $code = 'BRL';
     $wpte_setting = get_option( 'wp_travel_engine_settings', true );
     $user = get_userdata( $post->post_author );
     if ( class_exists( 'Vendor_Wp_Travel_Engine' ) && $user && in_array( 'trip_vendor', $user->roles ) ) 

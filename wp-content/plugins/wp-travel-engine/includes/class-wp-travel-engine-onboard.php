@@ -220,7 +220,7 @@ class WP_TRAVEL_ENGINE_ONBOARDING_PROCESS {
 		</div>
 	*/
 	function wte_onboard_dynamic_recommendation_callback(){
-		$currency_code = isset( $_POST['currency_code'] ) ? $_POST['currency_code'] : 'USD';
+		$currency_code = isset( $_POST['currency_code'] ) ? $_POST['currency_code'] : 'BRL';
 		$addons_data = get_transient( 'wp_travel_engine_onboard_addons_list' );
 		if ( ! $addons_data ) {
 			$addons_data = wp_safe_remote_get( WP_TRAVEL_ENGINE_STORE_URL . '/edd-api/v2/products/?category=payment-gateways&number=-1' );

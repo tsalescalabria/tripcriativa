@@ -82,7 +82,7 @@
 
         #endregion Properties
 
-        const CURRENCY_USD = 'usd';
+        const CURRENCY_USD = 'BRL';
         const CURRENCY_GBP = 'gbp';
         const CURRENCY_EUR = 'eur';
 

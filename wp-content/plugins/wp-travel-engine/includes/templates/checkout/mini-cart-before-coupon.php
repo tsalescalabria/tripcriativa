@@ -76,7 +76,7 @@ if ( ! empty( $cart_items ) ) :
                         if(!empty($cart_discounts) || sizeof($cart_discounts) !== 0){ 
                             $obj = new Wp_Travel_Engine_Functions();
                             $trip_total = $wte_cart->get_total();
-                            $code = isset($wte_settings['currency_code']) ? $wte_settings['currency_code']: 'USD';
+                            $code = isset($wte_settings['currency_code']) ? $wte_settings['currency_code']: 'BRL';
                             $currency = $obj->wp_travel_engine_currencies_symbol( $code );
                             $calculated_total = isset( $trip_total['cart_total'] ) && ! empty( $trip_total['cart_total'] ) ? intval($trip_total['cart_total']) : 0;
                             

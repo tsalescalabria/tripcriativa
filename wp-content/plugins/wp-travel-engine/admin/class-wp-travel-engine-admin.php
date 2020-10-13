@@ -492,7 +492,7 @@ class Wp_Travel_Engine_Admin
 					break;
 
 				case 'cost':
-					$code = 'USD';
+					$code = 'BRL';
 					if (isset($wp_travel_engine_setting_option_setting['currency_code']) && $wp_travel_engine_setting_option_setting['currency_code'] != '') {
 						$code = $wp_travel_engine_setting_option_setting['currency_code'];
 					}
@@ -508,7 +508,7 @@ class Wp_Travel_Engine_Admin
 				case 'remaining':
 
 					if (isset($terms['place_order']['due']) && $terms['place_order']['due'] != '') {
-						$code = 'USD';
+						$code = 'BRL';
 						if (isset($wp_travel_engine_setting_option_setting['currency_code']) && $wp_travel_engine_setting_option_setting['currency_code'] != '') {
 							$code = $wp_travel_engine_setting_option_setting['currency_code'];
 						}
@@ -524,7 +524,7 @@ class Wp_Travel_Engine_Admin
 				case 'paid':
 
 					if (isset($terms['place_order']['due']) && $terms['place_order']['due'] != '') {
-						$code = 'USD';
+						$code = 'BRL';
 						if (isset($wp_travel_engine_setting_option_setting['currency_code']) && $wp_travel_engine_setting_option_setting['currency_code'] != '') {
 							$code = $wp_travel_engine_setting_option_setting['currency_code'];
 						}
@@ -533,7 +533,7 @@ class Wp_Travel_Engine_Admin
 						echo esc_attr($currency) . ' ';
 						echo floatval($terms['place_order']['cost']) + floatval($terms['place_order']['due']) - floatval($terms['place_order']['due']);
 					} else {
-						$code = 'USD';
+						$code = 'BRL';
 						if (isset($wp_travel_engine_setting_option_setting['currency_code']) && $wp_travel_engine_setting_option_setting['currency_code'] != '') {
 							$code = $wp_travel_engine_setting_option_setting['currency_code'];
 						}
@@ -653,7 +653,7 @@ class Wp_Travel_Engine_Admin
 						$value = str_replace(',', '', $value);
 						$tot = $tot + $value;
 					}
-					$code = 'USD';
+					$code = 'BRL';
 					if (isset($wp_travel_engine_setting_option_setting['currency_code']) && $wp_travel_engine_setting_option_setting['currency_code'] != '') {
 						$code = $wp_travel_engine_setting_option_setting['currency_code'];
 					}

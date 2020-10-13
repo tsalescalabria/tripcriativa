@@ -123,7 +123,7 @@ $response = mm_api_cache( $api_url );
 								<div class="col-xs-12 col-sm-3 col-md-2">
 									<div class="text-center info-box">
 										<div class="price">
-											<span class="currency"><?php esc_html_e( 'USD', 'mojo-marketplace-wp-plugin' ); ?></span>
+											<span class="currency"><?php esc_html_e( 'BRL', 'mojo-marketplace-wp-plugin' ); ?></span>
 											<span class="price-number">$' ); ?><span><?php echo number_format( $item->prices->single_domain_license ); ?></span></span>
 										</div>
 										<div class="btn-group-vertical" role="group">

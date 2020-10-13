@@ -116,7 +116,7 @@ class WP_Travel_Engine_Emails {
 		$wp_travel_engine_settings = get_option( 'wp_travel_engine_settings' );
 
 		$obj           = new Wp_Travel_Engine_Functions();
-		$code          = isset( $wp_travel_engine_settings['currency_code'] ) ? $wp_travel_engine_settings['currency_code'] : 'USD';
+		$code          = isset( $wp_travel_engine_settings['currency_code'] ) ? $wp_travel_engine_settings['currency_code'] : 'BRL';
 		$currency_sign = $obj->wp_travel_engine_currencies_symbol( $code );
 
 		// Define variables.

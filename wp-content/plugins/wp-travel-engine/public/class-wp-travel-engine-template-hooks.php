@@ -101,7 +101,7 @@ class WP_Travel_Engine_Template_Hooks {
 
 		// Functions
 		$functions     = new Wp_Travel_Engine_Functions();
-		$currency_code = 'USD';
+		$currency_code = 'BRL';
 		$currency_code = $functions->trip_currency_code( $post );
 
 		// Get global and post settings.

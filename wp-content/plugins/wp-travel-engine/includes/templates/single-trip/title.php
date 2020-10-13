@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <span class="wte-title-duration">
         <?php 
             printf(
-                _nx( ' - %s Day', ' - %s Days', $duration, 'single-trip-title', 'wp-travel-engine' ),
+                _nx( ' - %s Dia', ' - %s Dias', $duration, 'single-trip-title', 'wp-travel-engine' ),
                 number_format_i18n( $duration ) 
             ); 
         ?>

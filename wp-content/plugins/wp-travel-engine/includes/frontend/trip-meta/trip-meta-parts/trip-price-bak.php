@@ -18,7 +18,7 @@
                 echo apply_filters( 'wp_travel_engine_price_info', $price_info );?></span>
                 <strong class="prev-price">
                     <?php
-                    $code = 'USD';
+                    $code = 'BRL';
                     $code = $obj->trip_currency_code( $post );
                     $currency = $obj->wp_travel_engine_currencies_symbol( $code );
                     $prev_cost = isset($wp_travel_engine_setting['trip_prev_price']) ? $wp_travel_engine_setting['trip_prev_price']: '';

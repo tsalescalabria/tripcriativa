@@ -114,7 +114,7 @@ if ( is_wp_error( $theme ) ) {
 						<div class="price">
 							<span class="price-number"><?php esc_html_e( '$', 'mojo-marketplace-wp-plugin' ); ?><span><?php echo number_format( $theme->prices->single_domain_license ); ?></span></span>
 							<br/>
-							<span class="currency"><?php esc_html_e( 'USD', 'mojo-marketplace-wp-plugin' ); ?></span>
+							<span class="currency"><?php esc_html_e( 'BRL', 'mojo-marketplace-wp-plugin' ); ?></span>
 						</div>
 						<div>
 						<?php echo esc_html( $theme->short_description ); ?>

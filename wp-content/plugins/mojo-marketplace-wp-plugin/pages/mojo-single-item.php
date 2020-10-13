@@ -81,7 +81,7 @@ $response = mm_api_cache( 'https://api.mojomarketplace.com/api/v2/items/' . $id 
 									<div class="hidden-xs widget text-center" style="border-width: 2px;">
 										<div class="price">
 											<span class="price-number"><?php esc_html_e( '$', 'mojo-marketplace-wp-plugin' ); ?><span><?php echo number_format( $item->prices->single_domain_license ); ?></span></span>
-											<span class="currency"><?php esc_html_e( 'USD', 'mojo-marketplace-wp-plugin' ); ?></span>
+											<span class="currency"><?php esc_html_e( 'BRL', 'mojo-marketplace-wp-plugin' ); ?></span>
 										</div>
 										<div class="btn-box">
 											<a class="btn btn-success btn-lg mm_buy_now" data-id="<?php echo $item->id; ?>" href="
@@ -106,7 +106,7 @@ $response = mm_api_cache( 'https://api.mojomarketplace.com/api/v2/items/' . $id 
 								<div class="widget text-center">
 									<div class="price">
 										<span class="price-number">$<span><?php echo number_format( $item->prices->single_domain_license ); ?></span></span>
-										<span class="currency"><?php esc_html_e( 'USD', 'mojo-marketplace-wp-plugin' ); ?></span>
+										<span class="currency"><?php esc_html_e( 'BRL', 'mojo-marketplace-wp-plugin' ); ?></span>
 									</div>
 									<div class="btn-box">
 										<a href="

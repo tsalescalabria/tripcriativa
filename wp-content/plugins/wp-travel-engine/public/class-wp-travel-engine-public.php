@@ -491,7 +491,7 @@ class Wp_Travel_Engine_Public {
 							<li><span><?php _e( 'Start Date: ', 'wp-travel-engine' ); ?></span> <input type="text" min="1" class="wp-travel-engine-price-datetime" id="wp-travel-engine-trip-datetime-<?php echo esc_attr( $value ); ?>" name="trip-date[]" placeholder="<?php _e( 'Pick a date', 'wp-travel-engine' ); ?>"></li>
 							<li class="trip-price-holder"><span><?php _e( 'Trip Price: ', 'wp-travel-engine' ); ?></span>
 							<?php
-							$code = 'USD';
+							$code = 'BRL';
 							if ( isset( $wp_travel_engine_setting_option_setting['currency_code'] ) && $wp_travel_engine_setting_option_setting['currency_code'] != '' ) {
 								$code = $wp_travel_engine_setting_option_setting['currency_code'];
 							}
@@ -964,7 +964,7 @@ class Wp_Travel_Engine_Public {
 				?>
 					<input type="hidden" id="amount" name="amount" value="<?php echo number_format( sprintf( '%.2f', $cost ), 2, '.', '' ); ?>">
 					<?php
-					$currency_code = isset( $wp_travel_engine_settings['currency_code'] ) ? esc_attr( $wp_travel_engine_settings['currency_code'] ) : 'USD';
+					$currency_code = isset( $wp_travel_engine_settings['currency_code'] ) ? esc_attr( $wp_travel_engine_settings['currency_code'] ) : 'BRL';
 					?>
 					<input type="hidden" name="currency_code" value="<?php echo $currency_code; ?>">
 					<!-- Specify URLs -->

@@ -91,7 +91,7 @@ class Wp_Travel_Engine_Thank_You {
 			$wp_travel_engine_trip_setting = get_post_meta( $_SESSION['trip-id'], 'wp_travel_engine_setting', true );
 
 			// for code and currency code
-			$code = 'USD';
+			$code = 'BRL';
 			if ( isset( $wp_travel_engine_settings['currency_code'] ) && $wp_travel_engine_settings['currency_code'] != '' ) {
 				$code = $wp_travel_engine_settings['currency_code'];
 			}
@@ -224,7 +224,7 @@ class Wp_Travel_Engine_Thank_You {
 			$wp_travel_engine_trip_setting = get_post_meta( $_SESSION['trip-id'], 'wp_travel_engine_setting', true );
 
 			// for code and currency code
-			$code = 'USD';
+			$code = 'BRL';
 			if ( isset( $wp_travel_engine_settings['currency_code'] ) && $wp_travel_engine_settings['currency_code'] != '' ) {
 				$code = $wp_travel_engine_settings['currency_code'];
 			}

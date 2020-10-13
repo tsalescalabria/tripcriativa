@@ -31,7 +31,7 @@ function wte_currency_code_in_db() {
 	// currency converter list, append it as well.
 	$wte_settings = get_option( 'wp_travel_engine_settings' );
 	if ( ! isset( $wte_settings['currency_code'] ) ) {
-		$wte_settings['currency_code'] = 'USD';
+		$wte_settings['currency_code'] = 'BRL';
 	}
 	$code_in_db = $wte_settings['currency_code'];
 
@@ -151,7 +151,7 @@ function wp_travel_engine_get_formated_price_with_currency_code_symbol( $price, 
 
 	$currency_symbol_display = 'code' === $option ? $currency_code : $currency_symbol;
 
-	$price_html = sprintf( '<span class="wpte-currency-code">%1$s</span><span class="wpte-price">%2$s</span>', $currency_symbol_display, wp_travel_engine_get_formated_price_separator( $price ) );
+	$price_html = sprintf( '<span class="wpte-currency-code">R%1$s</span><span class="wpte-price">%2$s</span>', $currency_symbol_display, wp_travel_engine_get_formated_price_separator( $price ) );
 
 	return apply_filters( 'wp_travel_engine_formated_price_currency_code_symbol', $price_html, $trip_id, $use_default_currency_code );
 
@@ -175,7 +175,7 @@ function wpte_get_formated_price_with_currency_code_symbol( $price, $trip_id = n
 
 	$price = apply_filters( 'wpte_formated_befor_price_currency_code_symbol', $price, $trip_id, $use_default_currency_code );
 
-	$price_html = sprintf( '<span class="wpte-currency-code">%1$s</span> <span class="wpte-price">%2$s</span>', $currency_symbol_display, wp_travel_engine_get_formated_price_separator( $price ) );
+	$price_html = sprintf( '<span class="wpte-currency-code">R%1$s</span> <span class="wpte-price">%2$s</span>', $currency_symbol_display, wp_travel_engine_get_formated_price_separator( $price ) );
 
 	return apply_filters( 'wpte_formated_price_currency_code_symbol', $price_html, $trip_id, $use_default_currency_code );
 
@@ -480,7 +480,7 @@ function wte_get_pricing_label_by_key_invoices( $trip_id, $pricing_key, $pax ) {
  */
 function wp_travel_engine_get_currency_code_or_symbol(){
 	$wp_travel_engine_settings = get_option( 'wp_travel_engine_settings', true );
-	$code = 'USD';
+	$code = 'BRL';
 
     if( isset( $wp_travel_engine_settings['currency_code'] ) && $wp_travel_engine_settings['currency_code']!= '' ){
         $code = $wp_travel_engine_settings['currency_code'];

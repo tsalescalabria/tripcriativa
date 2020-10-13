@@ -168,7 +168,7 @@ class Wp_Travel_Engine_SEO {
                     'name'          => get_the_title( $post_id ),
                     'availability'  => 'http://schema.org/InStock',
                     'price'         => ( isset( $price ) ? $price : '' ),
-                    'priceCurrency' => ( isset( $priceCurrency ) ? $priceCurrency : 'USD' ),
+                    'priceCurrency' => ( isset( $priceCurrency ) ? $priceCurrency : 'BRL' ),
                     'url'           => $trip_url
                 ),
             )
