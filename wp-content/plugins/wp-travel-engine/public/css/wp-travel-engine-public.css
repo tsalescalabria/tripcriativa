@@ -1493,11 +1493,11 @@ select#wte_payment_options {
 
 .successful {
     display: none;
-    color: #32b67a;
+    color: #00ced1;
     background: #dcf5de;
     padding: 5px 10px;
     border-radius: 5px;
-    border: 1px solid #32b67a;
+    border: 1px solid #00ced1;
 }
 
 .place-order-form-primary-wrapper {

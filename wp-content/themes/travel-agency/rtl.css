@@ -358,7 +358,7 @@ body {
 }
 
 .banner .form-holder .search-form input[type="submit"]{
-    background:#32b67a url(images/bg-search.png) no-repeat calc(100% - 30px) 15px;
+    background:#00ced1 url(images/bg-search.png) no-repeat calc(100% - 30px) 15px;
 }
 
 .about .text-holder,
@@ -709,7 +709,7 @@ body {
     padding-left: 0;
     padding-right: 15px;
     border-left: 0;
-    border-right:4px solid #32b67a ;
+    border-right:4px solid #00ced1 ;
 }
 
 #primary .post .entry-content .pull-left::before, #primary .page .entry-content .pull-left::before{

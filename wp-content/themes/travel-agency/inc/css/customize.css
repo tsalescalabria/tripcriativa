@@ -63,9 +63,9 @@ label.row-element.more-detail{
 	margin-top:  -4px;
 	font-weight: 700;
 	margin-left: 8px;
-  background: #32b67a;
+  background: #00ced1;
   color: #fff;
-  border-color: #32b67a;
+  border-color: #00ced1;
   padding: 0 20px 1px;
 }
 
@@ -102,7 +102,7 @@ label.row-element.more-detail{
     margin:5px 0;
 }
 .customizer-custom .sticky_info_row a {
-    background-color: #32b67a;
+    background-color: #00ced1;
     padding: 4px;
     color: #fff;
     border-radius: 7px;
@@ -114,7 +114,7 @@ label.row-element.more-detail{
 }
 .customizer-custom .sticky_info_row a:hover {
     background-color: #fff;
-    color: #32b67a;
+    color: #00ced1;
 }
 
 .customizer-custom .customize-control {
