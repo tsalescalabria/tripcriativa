@@ -54,7 +54,7 @@ class WP_Travel_Engine_Enquiry_Form_Shortcodes
 			'package_label' => array(
 				'type'          => 'text_info',
 				'wrapper_class' => 'row-repeater package-name-holder',
-				'field_label'   => __( 'Package name:', 'wp-travel-engine' ),
+				'field_label'   => __( 'Nome do Pacote:', 'wp-travel-engine' ),
 				'name'          => 'package_label',
 				'id'            => 'package_label',
 				'validations'   => array(
@@ -107,7 +107,7 @@ class WP_Travel_Engine_Enquiry_Form_Shortcodes
 		?>
 			<div class="wte_enquiry_contact_form-wrap">
 				<form name="wte_enquiry_contact_form" action="#" method="post" id="wte_enquiry_contact_form" class="wte_enquiry_contact_form">
-					<h2 class="enquiry-form-title"><?php echo esc_html__( 'You can send your enquiry via the form below.', 'wp-travel-engine' ); ?></h2>
+					<h2 class="enquiry-form-title"><?php echo esc_html__( 'Você pode enviar sua consulta através do formulário abaixo.', 'wp-travel-engine' ); ?></h2>
 					<?php
 						// Print headings and hidden fields. 
 						$form_field->init( $package_detail_fields )->render(); 

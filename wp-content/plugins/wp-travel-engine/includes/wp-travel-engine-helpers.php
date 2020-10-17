@@ -314,7 +314,7 @@ function wp_travel_engine_get_trip_duration( $trip_id ) {
 
 	$trip_settings = get_post_meta( $trip_id, 'wp_travel_engine_setting', true );
 
-	return sprintf( _nx( '%s Dia', '%s Dias', $trip_settings['trip_duration'], 'trip duration days', 'wp-travel-engine' ), number_format_i18n( $trip_settings['trip_duration'] ) ) . ' ' . sprintf( _nx( '%s Night', '%s Nights', $trip_settings['trip_duration_nights'], 'trip duration nights', 'wp-travel-engine' ), number_format_i18n( $trip_settings['trip_duration_nights'] ) );
+	return sprintf( _nx( '%s Dia', '%s Dias', $trip_settings['trip_duration'], 'trip duration days', 'wp-travel-engine' ), number_format_i18n( $trip_settings['trip_duration'] ) ) . ' ' . sprintf( _nx( '%s Noite', '%s Noites', $trip_settings['trip_duration_nights'], 'trip duration nights', 'wp-travel-engine' ), number_format_i18n( $trip_settings['trip_duration_nights'] ) );
 
 }
 

@@ -6,7 +6,7 @@
 	<?php do_action( 'wte_before_price_info' ); ?>
 	<div class="wpte-bf-price-wrap">
 		<?php do_action( 'wte_before_price_info_title' ); ?>
-		<div class="wpte-bf-ptitle"><?php _e( 'Price From', 'wp-travel-engine' ); ?></div>
+		<div class="wpte-bf-ptitle"><?php _e( 'Valor e Data', 'wp-travel-engine' ); ?></div>
 		<?php do_action( 'wte_after_price_info_title' ); ?>
 
 		<div class="wpte-bf-price">
@@ -19,7 +19,7 @@
 				<?php echo wp_travel_engine_get_formated_price_with_currency_code_symbol( $price ); ?></b>
 			</ins>
 			<?php
-				$per_person_txt_out = 'per-person' === $price_per_text ? __( 'Per Person', 'wp-travel-engine' ) : __( 'Per Group', 'wp-travel-engine' );
+				$per_person_txt_out = 'per-person' === $price_per_text ? __( 'Por adulto', 'wp-travel-engine' ) : __( 'Per Group', 'wp-travel-engine' );
 			?>
 			<span class="wpte-bf-pqty"><?php echo apply_filters( 'wte_default_traveller_unit', $per_person_txt_out ); ?></span>
 		</div>
@@ -127,9 +127,9 @@
 		if ( ! $hide_enquiry_form ) :
 			?>
 				<div class="wpte-bf-help-block">
-				<?php esc_html_e( 'Need Help With Booking?', 'wp-travel-engine' ); ?>
+				<?php esc_html_e( 'Dúvidas sobre o pacote?', 'wp-travel-engine' ); ?>
 					<a href="#wte_enquiry_contact_form" id="wte-send-enquiry-message">
-					<?php esc_html_e( 'Send Us A Message', 'wp-travel-engine' ); ?>
+					<?php esc_html_e( 'Fale com a gente', 'wp-travel-engine' ); ?>
 					</a>
 				</div>
 			<?php

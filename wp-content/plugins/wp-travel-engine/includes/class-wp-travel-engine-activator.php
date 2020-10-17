@@ -340,17 +340,17 @@ class Wp_Travel_Engine_Activator {
 				array(
 					'field_id' => array
 						(
-							'1' => __( 'Transportation', 'wp-travel-engine' ),
-							'2' => __( 'Group Size', 'wp-travel-engine' ),
-							'3' => __( 'Maximum Altitude', 'wp-travel-engine' ),
-							'4' => __( 'Accomodation', 'wp-travel-engine' ),
+							'1' => __( 'Transporte', 'wp-travel-engine' ),
+							'2' => __( 'Grupo', 'wp-travel-engine' ),
+							'3' => __( 'Altitude Máxima', 'wp-travel-engine' ),
+							'4' => __( 'Acomodação', 'wp-travel-engine' ),
 							'5' => __( 'Fitness level', 'wp-travel-engine' ),
-							'6' => __( 'Arrival on', 'wp-travel-engine' ),
+							'6' => __( 'Chegada', 'wp-travel-engine' ),
 							'7' => __( 'Departure from', 'wp-travel-engine' ),
 							'8' => __( 'Best season', 'wp-travel-engine' ),
 							'9' => __( 'Guiding method', 'wp-travel-engine' ),
 							'10' => __( 'Tour type', 'wp-travel-engine' ),
-							'11' => __( 'Meals', 'wp-travel-engine' ),
+							'11' => __( 'Refeições', 'wp-travel-engine' ),
 							'12' => __( 'Language', 'wp-travel-engine' ),
 						),
 

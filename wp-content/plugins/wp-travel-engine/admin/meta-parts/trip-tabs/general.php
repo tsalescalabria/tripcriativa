@@ -64,11 +64,11 @@ $trip_maximum_pax   = isset( $wp_travel_engine_setting['trip_maximum_pax'] ) ? $
     </div>
     <?php // if ( $trip_duration_nights ) : ?>
         <div class="wpte-field wpte-floated">
-            <label class="wpte-field-label"><?php _e( 'Nights', 'wp-travel-engine' ); ?> </label>
+            <label class="wpte-field-label"><?php _e( 'Noites', 'wp-travel-engine' ); ?> </label>
             <div class="wpte-multi-fields wpte-floated">
                 <input type="number" min="1" step="1" name="wp_travel_engine_setting[trip_duration_nights]" value="<?php echo $trip_duration_nights ? esc_attr( $trip_duration_nights ) : '' ?>" placeholder="<?php _e( 'Enter Duration', 'wp-travel-engine' ); ?>">
                 <select>
-                    <option><?php _e( 'Night(s)', 'wp-travel-engine' ) ?></option>
+                    <option><?php _e( 'Noite(s)', 'wp-travel-engine' ) ?></option>
                 </select>
             </div>
             <span class="wpte-tooltip"><?php esc_html_e( 'Enter the trip duration in nights.', 'wp-travel-engine' ) ?></span>

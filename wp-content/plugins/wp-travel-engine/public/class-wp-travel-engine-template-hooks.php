@@ -132,8 +132,7 @@ class WP_Travel_Engine_Template_Hooks {
 		 * @change 4.1.7 To keepup tab/step uniqueness.
 		 */
 		$booking_steps = array(
-			'date'       => __( 'Select a Date', 'wp-travel-engine' ),
-			'travellers' => __( 'Travellers', 'wp-travel-engine' ),
+			'date'       => __( 'Data da Viagem', 'wp-travel-engine' ),
 		);
 		$booking_steps = apply_filters( 'wte_trip_booking_steps', $booking_steps );
 
